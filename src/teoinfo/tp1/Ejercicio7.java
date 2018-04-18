@@ -17,8 +17,8 @@ public class Ejercicio7
 		ejercicio7.CalcularDistProbabilidadesCarasColoreadas();
 		System.out.println();
 		
-		//ejercicio7.CalcularDistProbabilidadesCarasColoreadasUsandoVector();
-		//System.out.println();
+		ejercicio7.CalcularDistProbabilidadesCarasColoreadasUsandoVector();
+		System.out.println();
 	}
 	
 	public Ejercicio7() 

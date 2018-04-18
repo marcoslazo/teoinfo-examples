@@ -53,11 +53,12 @@ public class Ejercicio4
 				}				
 			
 				pruebas++;
-			}
+				
+				// Actualización de probabilidades
+				probAnterior = prob;
+				prob = (float) (exitos) / pruebas;
+			}		
 			
-			// Actualización de probabilidades
-			probAnterior = prob;
-			prob = (float) (exitos) / pruebas;
 		}
 		
 		return prob;
@@ -82,18 +83,18 @@ public class Ejercicio4
 				if (diagnostico == ENFERMO)
 				{
 					exitos++;
-				}
-				
-				pruebas++;
-			}					
+				}				
 			
-			// Actualización de probabilidades
-			probAnterior = prob;
-			prob = (float) (exitos) / pruebas;
+				pruebas++;
+				
+				// Actualización de probabilidades
+				probAnterior = prob;
+				prob = (float) (exitos) / pruebas;
+			}									
 		}
 		
 		return prob;
-	}
+	}	
 		
 	private boolean Converge(float probActual, float probAnterior) 
 	{
